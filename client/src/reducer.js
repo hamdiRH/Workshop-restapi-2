@@ -1,6 +1,5 @@
 const initialState = {
-  contact: [],
-  loading: false
+  contact: []
 };
 
 export default function(state = initialState, action) {
@@ -8,8 +7,7 @@ export default function(state = initialState, action) {
     case "GET_CONTACTS":
       return {
         ...state,
-        contact: action.payload,
-        loading: false
+        contact: action.payload
       };
     default:
       return state;
